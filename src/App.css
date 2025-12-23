@@ -4,5 +4,5 @@
     --font-robotomono:"Roboto Mono",sans-serif;
 }
 html,body{
-    @apply bg-rose-300;
+    @apply bg-teal-500;
 }
