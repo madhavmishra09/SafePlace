@@ -14,7 +14,6 @@ function App() {
         element={
           <>
           <div><NavBar/></div>
-          <Route path='/'/>
           <section>
             
           </section>
