@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import NavBar from './nav.jsx'
+import ChatLine from './chat.jsx'
 import { useNavigate,Routes,Route } from 'react-router';
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,13 @@ function App() {
       <Routes>
         <Route path="/"
         element={
-          <div><NavBar/></div>
+          <>
+          <div><ChatLine/></div>
+          <section>
+            
+          </section>
+          <div><ChatLine/></div>
+          </>
         }
       />
       </Routes>
