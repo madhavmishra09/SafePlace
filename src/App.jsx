@@ -13,7 +13,8 @@ function App() {
         <Route path="/"
         element={
           <>
-          <div><ChatLine/></div>
+          <div><NavBar/></div>
+          <Route path='/'/>
           <section>
             
           </section>
