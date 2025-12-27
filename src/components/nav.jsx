@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 export default function Navbar() {
-    return (
-        <div className="w-full flex justify-center">
-            <nav
-                className="
+  return (
+    <div className="w-full flex justify-center">
+      <nav
+        className="
           font-robotomono
           w-full max-w-[1200px]
           h-[90px]
@@ -12,18 +13,16 @@ export default function Navbar() {
           bg-slate-900
           text-slate-100
         "
-            >
-                {/* Logo / Brand */}
-                <h1 className="text-[36px] font-bold tracking-wide">
-                    SafePlace
-                </h1>
+      >
+        {/* Logo / Brand */}
+        <h1 className="text-[36px] font-bold tracking-wide">SafePlace</h1>
 
-                {/* Actions */}
-                <ul className="flex gap-4">
-                    <li>
-                        <a
-                            href="/login"
-                            className="
+        {/* Actions */}
+        <ul className="flex gap-4">
+          <li>
+            <Link
+              to="/login"
+              className="
                 px-6 py-2
                 rounded-[30px]
                 text-[18px] font-medium
@@ -31,15 +30,15 @@ export default function Navbar() {
                 hover:bg-indigo-300
                 transition
               "
-                        >
-                            Login
-                        </a>
-                    </li>
+            >
+              Login
+            </Link>
+          </li>
 
-                    <li>
-                        <a
-                            href="/signup"
-                            className="
+          <li>
+            <Link
+              to="/signup"
+              className="
                 px-6 py-2
                 rounded-[30px]
                 text-[18px] font-medium
@@ -48,12 +47,12 @@ export default function Navbar() {
                 hover:bg-indigo-400 hover:text-slate-900
                 transition
               "
-                        >
-                            Sign Up
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    );
+            >
+              Sign Up
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
