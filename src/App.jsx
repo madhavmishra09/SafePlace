@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Landing from './pages/land.jsx'
 import NavBar from './components/nav.jsx'
 import ChatLine from './components/chat.jsx'
 import { useNavigate,Routes,Route } from 'react-router';
@@ -14,9 +15,7 @@ function App() {
         element={
           <>
           <div><NavBar/></div>
-          <section>
-            
-          </section>
+          <div><Landing/></div>
           <div><ChatLine/></div>
           </>
         }
