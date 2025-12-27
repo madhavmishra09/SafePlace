@@ -1,25 +1,25 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import Landing from './pages/land.jsx'
 import NavBar from './components/nav.jsx'
-import ChatLine from './components/chat.jsx'
-import { useNavigate,Routes,Route } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/login';
+import SignUp from './pages/signup';
 function App() {
-  const [count, setCount] = useState(0)
-  const [loading,setLoading]=useState(false);
-  const navigate=useNavigate();
+
   return (
     <>
       <Routes>
         <Route path="/"
-        element={
-          <>
-          <div><NavBar/></div>
-          <div><Landing/></div>
-          <div><ChatLine/></div>
-          </>
-        }
-      />
+          element={
+            <>
+              <div><NavBar /></div>
+              <div><Landing /></div>
+            </>
+          }
+        />
+        <Route path="/login" element={<><div><LoginPage /></div></>} />
+        <Route path="/signup" element={<><div><SignUp /></div></>} />
       </Routes>
     </>
   )
