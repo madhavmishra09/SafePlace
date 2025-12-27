@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import NavBar from './nav.jsx'
-import ChatLine from './chat.jsx'
+import NavBar from './components/nav.jsx'
+import ChatLine from './components/chat.jsx'
 import { useNavigate,Routes,Route } from 'react-router';
 function App() {
   const [count, setCount] = useState(0)
