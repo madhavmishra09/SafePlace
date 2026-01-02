@@ -3,8 +3,8 @@ import './App.css'
 import Landing from './pages/land.jsx'
 import NavBar from './components/nav.jsx'
 import { Routes, Route } from 'react-router-dom';
-import LoginPage from './pages/login';
-import SignUp from './pages/signup';
+import LoginPage from './auth/login';
+import SignUp from './auth/signup';
 function App() {
 
   return (
