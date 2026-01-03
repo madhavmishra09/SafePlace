@@ -8,7 +8,7 @@ import SignUp from './auth/signup';
 function App() {
 
   return (
-    <>
+
       <Routes>
         <Route path="/"
           element={
@@ -21,7 +21,6 @@ function App() {
         <Route path="/login" element={<><div><LoginPage /></div></>} />
         <Route path="/signup" element={<><div><SignUp /></div></>} />
       </Routes>
-    </>
   )
 }
 
