@@ -30,6 +30,11 @@ export default function Landing() {
                     >
                         Get Support
                     </a>
+                    <a
+                        href="/chat"
+                        className="bg-green-400 text-slate-900 px-8 py-3 rounded-[30px] text-[18px] font-medium hover:bg-green-300 transition"
+                    >
+                    Start Chat</a>
                 </div>
             </section>
 
