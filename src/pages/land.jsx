@@ -1,7 +1,7 @@
 import brain from "../assets/brainstorm.png";
 import chat from "../assets/messenger.png";
 import book from "../assets/stack-of-books.png";
-
+    
 export default function Landing() {
     return (
         <>
